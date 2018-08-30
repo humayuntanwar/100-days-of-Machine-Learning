@@ -3,6 +3,8 @@
 import pandas as pd
 #Import Quandl for data
 import quandl 
+#import math
+import math
 
 #get google wiki data
 df = quandl.get('WIKI/GOOGL')
@@ -19,5 +21,15 @@ df['PCT_change'] = (df['Adj. Close']- df['Adj. Open'])/ df['Adj. Open'] *100.00
 #define new data frame 
 df= df[['Adj. Close','HL_PCT','PCT_change','Adj. Volume']]
 #print df
+#print(df.head())
+#make a forecast column
+forecast_col = 'Adj. Close'
+#fill na not available
+df.fillna(-99999,inplace=True)
+#math.ceil round to nearest val convert to int predict 10% of data 
+forecast_out = int(math.ceil(0.1*len(df)))
+#create labels, adjusted close price in 10 days 
+df['label'] = df[forecast_col].shift(-forecast_out)
+df.dropna(inplace=True)
 print(df.head())
 
