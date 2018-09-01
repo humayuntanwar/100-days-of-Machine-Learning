@@ -14,4 +14,8 @@ A Repository for Machine Learning Algorithms for easy Understanding
   first time used linear Regression to test and train using linear_model from Linear Regression.
   ##### Libraries used : + numpy , sklearn
   
+### Day 4
+  firstly,we used regresion for forecasting and predicting the the future stock, also plotted the values
+  ##### Libraries used : + datetime , matplotlib and style from mpl 
+  
   
