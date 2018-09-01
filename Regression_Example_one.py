@@ -94,6 +94,7 @@ for i in forecast_set:
      #  setting those as values basically making the future features nan numbers , 
      # the last line just takes of all the first cloumn not a number and the final coloum what ever i is ,
      #  which is forecast in this case
+     #df loc references next date , makes it index
      df.loc[next_date] = [np.nan for _ in range (len(df.columns)-1)]+[i]
 
 # there is a gap
