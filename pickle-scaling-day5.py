@@ -19,10 +19,15 @@ import pickle # import pickle works like opening and saving file
 style.use('ggplot') # specify style type
 
 #get google wiki data
-df = quandl.get('WIKI/GOOGL')
+#df = quandl.get('WIKI/GOOGL')
+#df.to_csv('data.csv')
+
 #each column is a feature
 #create a long list of all the columns we need
 #open prcice, close price, highest and lowest price, total volume
+df = pd.read_csv('data.csv',header=0, 
+                  index_col='Date',
+                  parse_dates=True)
 df = df[['Adj. Open','Adj. High','Adj. Low','Adj. Close','Adj. Volume',]]
 #print(df.head())
 #finding percent volitility HL_PCT coloum name . high - low /low
