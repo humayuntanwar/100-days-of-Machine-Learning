@@ -28,3 +28,5 @@ A Repository for Machine Learning Algorithms for easy Understanding
   ##### Libraries used :  + pickle
   implemented best fit line slope eqaution y= mx+b , also made predict of y based on xs, plotted the points and line 
   #### Libraries used = numpy + matplotlib
+  
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/best-fit-line-plot.png)
