@@ -18,4 +18,7 @@ A Repository for Machine Learning Algorithms for easy Understanding
   firstly,we used regresion for forecasting and predicting the the future stock, also plotted the values
   ##### Libraries used : + datetime , matplotlib and style from mpl 
   
+### Day 4 and 5 
+  completed Siraj rivals linear Regression using Gradient Descent live stream work along to predict more practices mean better results
   
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/LinearRegressionUsingGradientDescent/gradient_descent_example.gif)
