@@ -23,7 +23,7 @@ A Repository for Machine Learning Algorithms for easy Understanding
   
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/LinearRegressionUsingGradientDescent/gradient_descent_example.gif)
   
-### day 5
+### Day 5
   learned pickling, in which we save our classifer as a pickle file and then loaded the pickle
   ##### Libraries used :  + pickle
   implemented best fit line slope eqaution y= mx+b , also made predict of y based on xs, plotted the points and line 
@@ -31,3 +31,12 @@ A Repository for Machine Learning Algorithms for easy Understanding
   
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/best-fit-line-plot.png)
 
+
+### Day 6
+  studied R Squared
+
+http://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
+
+https://www.coursera.org/lecture/linear-regression-model/r-squared-lMej8
+
+https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-least-squares-regression/v/r-squared-or-coefficient-of-determination
