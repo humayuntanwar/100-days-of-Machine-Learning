@@ -11,7 +11,7 @@ import numpy as np
 from sklearn import preprocessing, model_selection, svm
 #imorting linear regression
 from sklearn.linear_model import LinearRegression
-#import matplotmib
+#import matplotlibrary
 import matplotlib.pyplot as plt
 from matplotlib import style # make it decent
 import pickle # import pickle works like opening and saving file
@@ -119,3 +119,4 @@ plt.xlabel ('Date') # this is date
 plt.ylabel('Price') # this is price
 
 plt.show() # show plot
+print("hello world")
