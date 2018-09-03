@@ -30,3 +30,12 @@ A Repository for Machine Learning Algorithms for easy Understanding
   #### Libraries used = numpy + matplotlib
   
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/best-fit-line-plot.png)
+  
+### day 6
+  studied R Squared
+  
+  http://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
+  
+  https://www.coursera.org/lecture/linear-regression-model/r-squared-lMej8
+  
+  https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-least-squares-regression/v/r-squared-or-coefficient-of-determination
