@@ -34,6 +34,8 @@ A Repository for Machine Learning Algorithms for easy Understanding
 
 ### Day 6
   studied R Squared
+  ![Alt Text](https://i.stack.imgur.com/xb1VY.png)
+  
 
 http://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
 
