@@ -77,6 +77,8 @@ accuracy  = clf.score(X_test,Y_test)
 print(accuracy) # 0.88 with Linear Regression , 0.73 with SVR, with kernel poly 0.63
 
 #day 4
+
+
 #predict based on x data, can pass single value or array fo data
 forecast_set = clf.predict(X_lately) #ACTUAL PREDICTION
 print(forecast_set,accuracy, forecast_out) # now we have predicted price for next 343 days 
