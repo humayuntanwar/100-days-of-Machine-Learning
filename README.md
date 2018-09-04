@@ -23,16 +23,24 @@ A Repository for Machine Learning Algorithms for easy Understanding
   
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/LinearRegressionUsingGradientDescent/gradient_descent_example.gif)
   
+  
 ### Day 5
   learned pickling, in which we save our classifer as a pickle file and then loaded the pickle
   ##### Libraries used :  + pickle
   implemented best fit line slope eqaution y= mx+b , also made predict of y based on xs, plotted the points and line 
   #### Libraries used = numpy + matplotlib
   
-  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/best-fit-line-plot.png)
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/best-fit-line-plot.png)
+  
+  
 
 
 ### Day 6
+  Testing Assumptions
+  
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/img/testingassumtion.png)
+  
+  
   studied R Squared
   ![Alt Text](https://i.stack.imgur.com/xb1VY.png)
   
@@ -42,6 +50,7 @@ http://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-
 https://www.coursera.org/lecture/linear-regression-model/r-squared-lMej8
 
 https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-least-squares-regression/v/r-squared-or-coefficient-of-determination
+  Implemented R Squared
 
 ### Day 7
    Started Classification w/ K Nearest Neighbors
@@ -58,10 +67,15 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   Studied Euclidean Distance
   https://www.youtube.com/watch?v=hl3bQySs8sM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=15
   https://www.youtube.com/watch?v=imD_XsEV-90
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/img/Euclidean_distance.png)
 
   Implemted Euclidean distance formula
-
+  
   Implented K nearest neighbor algorithm from scratch using our own data, classfied one point
   images also added to see differences
+  
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/img/knearestunclassified.png) 
+  ![Alt text](https://github.com/humayuntanwar/Machine-Learning/blob/master/img/knearestclassified.png)
+  
   ##### Libraries used: numpy, matplotlib, warnings, sqrt,collections 
 
