@@ -58,4 +58,10 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   Studied Euclidean Distance
   https://www.youtube.com/watch?v=hl3bQySs8sM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=15
   https://www.youtube.com/watch?v=imD_XsEV-90
-  
+
+  Implemted Euclidean distance formula
+
+  Implented K nearest neighbor algorithm from scratch using our own data, classfied one point
+  images also added to see differences
+  ##### Libraries used: numpy, matplotlib, warnings, sqrt,collections 
+
