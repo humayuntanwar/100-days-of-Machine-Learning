@@ -16,7 +16,7 @@ style.use('fivethirtyeight')
 
 import random # using random numbers
 
-def creat_dataset(hm, variance, step=2, correlation= False): #
+def creat_dataset(hm, variance, step=2, correlation= False): # no of values , variance, steps and correlation
     val = 1 #first val for y
     ys = []
     for i in range(hm):

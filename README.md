@@ -42,3 +42,12 @@ http://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-
 https://www.coursera.org/lecture/linear-regression-model/r-squared-lMej8
 
 https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-least-squares-regression/v/r-squared-or-coefficient-of-determination
+
+### Day 7
+   Started Classification w/ K Nearest Neighbors
+   https://www.youtube.com/watch?v=44jq6ano5n0&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=13
+   
+   https://www.youtube.com/watch?v=44jq6ano5n0&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=13
+
+   Using the Breast Cancer Dataset from Wisconsin-Madison
+   https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/
