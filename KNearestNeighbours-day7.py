@@ -2,7 +2,7 @@ import numpy as np
 from sklearn import preprocessing, model_selection, neighbors
 import pandas as pd
 
-df = pd.read_csv('breast-cancer-wisconsin.data.txt') #reading data set
+df = pd.read_csv('datasets/breast-cancer-wisconsin.data.txt') #reading data set
 df.replace('?', -99999, inplace=True) # repalce ? with -99999 outlier 
 df.drop(['id'],1,inplace=True) # dropping id column
 
@@ -21,7 +21,7 @@ print(accuracy) #currently 97.85% which type of cancer
 
 example_measures = np.array([4,2,1,1,1,2,3,2,1]) #testing ton this data
 
-example_measures= example_measures.reshape(len(example_measures),-1) #get rid of deprecation value, reshaping array
+example_measures= example_measures.reshape(1,-1) #get rid of deprecation value, reshaping array
 
 prediction = clf.predict(example_measures) # predictions
 print(prediction) #output 2
