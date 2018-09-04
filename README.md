@@ -51,3 +51,11 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
    Using the Breast Cancer Dataset from Wisconsin-Madison
    https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/
+
+   Implemented K nearest Neighbours on Breast cancer data
+  ##### Libraries used: numpy , neighbors from sklearn, pandas
+
+  Studied Euclidean Distance
+  https://www.youtube.com/watch?v=hl3bQySs8sM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=15
+  https://www.youtube.com/watch?v=imD_XsEV-90
+  
