@@ -42,6 +42,64 @@ result = k_nearest_neighbors(dataset, new_features,k=3)
 print(result) # result is R exactly according to our defined data set
 
 
-[ [ plt.scatter(ii[0],ii[1],s=100,color=i) for ii in dataset[i]] for i in dataset]
-plt.scatter(new_features[0],new_features[1],color = result, s=100)
-plt.show()
+# [ [ plt.scatter(ii[0],ii[1],s=100,color=i) for ii in dataset[i]] for i in dataset]
+# plt.scatter(new_features[0],new_features[1],color = result, s=100)
+# plt.show()
+
+#DAY 8
+#applying our own k nearest on breast cancer dataset
+
+import pandas as pd
+import random
+
+df = pd.read_csv('datasets/breast-cancer-wisconsin.data.txt')  # read dataset
+df.replace('?',-99999,inplace=True) # replace empty with -99999
+df.drop(['id'],1,inplace=True)#dropping id column , because it reduces accurarcy
+
+#print(df.head())
+
+full_data = df.astype(float).values.tolist() #make sure all values are in float
+print(full_data[:5]) # unshuffled
+
+#shuffling the data because its a list of list
+random.shuffle(full_data)
+print(20*'#')
+print(full_data[:5]) #after shuffle
+
+# our version of trained test spilt
+test_size = 0.2 # 20% of data
+train_set = {2:[],4:[]} # 2 , 4 represent types of cancer according to dataset
+test_set = {2:[],4:[]} # these are dictionaries
+train_data = full_data[:-int(test_size*len(full_data))] #first 20% of the data
+test_data = full_data[-int(test_size*len(full_data)):] # last 20% of the data
+
+#populate the dictionaries
+
+# train set  i negative 1 , because last column is class, append upto the last one
+for i in train_data:
+    train_set[i[-1]].append(i[:-1]) 
+
+ # test populate
+for i in test_data:
+   test_set[i[-1]].append(i[:-1])
+
+correct = 0
+total = 0
+
+# for each group in test set we are testing these, for data in testing about to feed through
+#dictionary from train set,  k=5 sklearn default
+for group in test_set:
+    for data in test_set[group]:
+        vote = k_nearest_neighbors(train_set,data,k=5)
+        if group ==vote:
+            correct +=1
+        total +=1
+
+print('Accurarcy:', correct/total) # this is our own algorithm based accuract 95%
+
+
+
+
+
+
+
