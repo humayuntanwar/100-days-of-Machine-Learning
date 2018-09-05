@@ -79,3 +79,10 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   
   ##### Libraries used: numpy, matplotlib, warnings, sqrt,collections 
 
+### Day 8
+
+  Testing our own k nearest neighbor algorithm on breast cancer dataset accuracy of 95%
+
+  comapared our k nearnest with numpy k nearest
+  our accuracy is 96.7% , numpy is 97.2% :(
+
