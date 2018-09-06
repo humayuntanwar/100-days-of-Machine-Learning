@@ -86,3 +86,21 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   comapared our k nearnest with numpy k nearest
   our accuracy is 96.7% , numpy is 97.2% :(
 
+### Day 9
+
+  Studied the theory of the Support Vector Machine (SVM), which is a classification learning algorithm for machine learning. We also show how to apply the SVM using Scikit-Learn on some familiar data.
+
+  https://www.youtube.com/watch?v=mA5nwGoRAOo&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=20
+
+  https://www.youtube.com/watch?v=_PwhiWxHK8o
+
+  Understanding Vectors
+  https://www.youtube.com/watch?v=HHUqhVzctQE&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=21
+  https://www.youtube.com/watch?v=fNk_zzaMoSs
+
+  Studied Support Vector Assertion
+  https://www.youtube.com/watch?v=VngCRWPrNNc&index=22&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v
+
+  support vectors fundamentals
+  https://www.youtube.com/watch?v=ZDu3LKv9gOI&index=23&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v
+  

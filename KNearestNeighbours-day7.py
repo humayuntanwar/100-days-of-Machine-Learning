@@ -1,5 +1,5 @@
 import numpy as np 
-from sklearn import preprocessing, model_selection, neighbors
+from sklearn import preprocessing, model_selection, neighbors,svm
 import pandas as pd
 accuracies =  []
 
@@ -14,7 +14,8 @@ for i in range(25):
     X_trian,X_test,Y_trian,Y_test = model_selection.train_test_split(X,Y,test_size=0.2) #shuffle transform data into triant and test data
 
     #defining classifiers
-    clf =neighbors.KNeighborsClassifier()
+   # clf =neighbors.KNeighborsClassifier()
+    clf = svm.SVC() # using built in SVC from sklearn
     # trian data
     clf.fit(X_trian,Y_trian) 
     #testing classifier
