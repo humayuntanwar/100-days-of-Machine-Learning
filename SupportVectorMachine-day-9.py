@@ -35,7 +35,7 @@ class Support_Vector_Machine:
         
         #extremely expensive
         b_range_multiple = 5
-        #
+        # we dont need to take as small of steps with b as we do w
         b_multiple = 5
         latest_optimum = self.max_feature_value*10
 
@@ -44,12 +44,12 @@ class Support_Vector_Machine:
             #we can do this because convex
             optimized = False
             while not optimized:
-                #pass
-        pass
+                for b in np.arange(-1*(self.max_feature_value*b_range_multiple),self.max_feature_value*b_range_multiple,step*b_multiple)
+
 
     def predict(self,data):
         # sign (x.w+b)
-        classification = np.sign(np.dot(np.array(features),self.w)+self.b))
+        classification = np.sign(np.dot(np.array(features),self.w)+self.b)
         return classification
 
 
