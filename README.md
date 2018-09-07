@@ -104,3 +104,5 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   support vectors fundamentals
   https://www.youtube.com/watch?v=ZDu3LKv9gOI&index=23&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v
   
+### Day 10
+  completed the implementation of Support Vector Machine (boy its messy)
