@@ -106,3 +106,5 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   
 ### Day 10
   completed the implementation of Support Vector Machine (boy its messy)
+
+  tested the SVM
