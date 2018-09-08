@@ -108,3 +108,16 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   completed the implementation of Support Vector Machine (boy its messy)
 
   tested the SVM
+  
+ ### Day 11
+  Completed the support vector Implementation , tested the algorithm and did some prediction on the test data
+  also did visualization
+  before after here 
+  ##### Libraries used :  + numpy
+  
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/SvmInitialtest.png)
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/classificatinwithprediction.png)
+
+  
+  
+  
