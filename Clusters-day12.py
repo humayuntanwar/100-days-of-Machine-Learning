@@ -21,6 +21,7 @@ clf.fit(X)
 
 centroids = clf.cluster_centers_
 labels = clf.labels_
+colors = ["g.","r.","c.","y."]
 
 for i in range(len(X)):
     print("coordinate:",X[i], "label:", labels[i])
