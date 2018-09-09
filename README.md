@@ -119,5 +119,11 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/classificatinwithprediction.png)
 
   
+ ### Day 12
+	studied indepth about kernals
+	studied in depth about clustering
+	implemented clustering from sklearn
+	
+	#### Libraries used : sklearn
   
   
