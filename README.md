@@ -129,5 +129,5 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/cluster-1.png)
 
   
-  
+-
   
