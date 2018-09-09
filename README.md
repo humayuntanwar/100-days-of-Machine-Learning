@@ -125,5 +125,9 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 	implemented clustering from sklearn
 	
 	#### Libraries used : sklearn
+
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/cluster-1.png)
+
+  
   
   
