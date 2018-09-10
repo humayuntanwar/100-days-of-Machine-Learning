@@ -134,5 +134,9 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
     today i practiced the handling of non numeric values in data using the titanic data set.
     the approach we used was identifying unique elements in colums and asigning them values
 
-    #$## Libraries used : sklearn +pandas + sklearn,cluster
+    #### Libraries used : sklearn +pandas + sklearn,cluster
 
+    passed the processed titanic data thorugh the kMeans clustering to see how many people survived
+    and how many didnt getting fairly good prediction of about 70%
+
+    

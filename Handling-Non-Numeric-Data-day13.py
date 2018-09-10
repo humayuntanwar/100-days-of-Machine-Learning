@@ -61,8 +61,30 @@ def handle_non_numeric_data(df):
     return df
 
 df = handle_non_numeric_data(df)
-print(df.head())
+#print(df.head())
 
+# lets drop ticket column
+df.drop(['boat'],1,inplace=True) # tickets number matters to cant drop
+#using k means on the data to see the chances of survival of people using the data already provided
+X = np.array(df.drop(['survived'],1).astype(float)) # droping survived coloumn
+#lets scale X now
+X = preprocessing.scale(X)
 
+Y = np.array(df['survived']) # our column
+clf = KMeans(n_clusters=2) # kmeans
+clf.fit(X)
 
+correct = 0
+for i in range(len(X)):
+    predict_me= np.array(X[i].astype(float))
+    predict_me = predict_me.reshape(-1, len(predict_me))
+    prediction = clf.predict(predict_me)
+    if prediction[0] == Y[i]:
+        correct +=1
 
+print(correct/len(X))  
+
+#currently we are between 49 to 51 which is inconclusive
+# after scaling X we jump to 75 to 28
+#Clusters are assigned totally arbitararily 
+#after dropping boat 70 to 30
