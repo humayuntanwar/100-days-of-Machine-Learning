@@ -130,4 +130,9 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
   
 -
-  
+  ### Day 13
+    today i practiced the handling of non numeric values in data using the titanic data set.
+    the approach we used was identifying unique elements in colums and asigning them values
+
+    #$## Libraries used : sklearn +pandas + sklearn,cluster
+
