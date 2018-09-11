@@ -139,4 +139,11 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
     passed the processed titanic data thorugh the kMeans clustering to see how many people survived
     and how many didnt getting fairly good prediction of about 70%
 
+### Day 14
+    implmented the K means clsutering algorithm from the scratch learned alot of the basic functionality
+    tested our own k means on titanic data
+    compared results with sklearn kmeans
+    ours is fasters, maybe due to haevy sklearn imports
+     
+
     
