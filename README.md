@@ -141,9 +141,12 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
 ### Day 14
     implmented the K means clsutering algorithm from the scratch learned alot of the basic functionality
+
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/centroids.png)
+
     tested our own k means on titanic data
     compared results with sklearn kmeans
     ours is fasters, maybe due to haevy sklearn imports
-     
+
 
     
