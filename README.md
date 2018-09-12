@@ -120,33 +120,40 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
   
  ### Day 12
-	studied indepth about kernals
-	studied in depth about clustering
-	implemented clustering from sklearn
+  studied indepth about kernals
+  studied in depth about clustering
+  implemented clustering from sklearn
 	
-	#### Libraries used : sklearn
+  #### Libraries used : sklearn
 
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/cluster-1.png)
 
   
--
-  ### Day 13
-    today i practiced the handling of non numeric values in data using the titanic data set.
-    the approach we used was identifying unique elements in colums and asigning them values
 
-    #### Libraries used : sklearn +pandas + sklearn,cluster
+ ### Day 13
+  
+  today i practiced the handling of non numeric values in data using the titanic data set.
+  the approach we used was identifying unique elements in colums and asigning them values
 
-    passed the processed titanic data thorugh the kMeans clustering to see how many people survived
-    and how many didnt getting fairly good prediction of about 70%
+  #### Libraries used : sklearn +pandas + sklearn,cluster
 
-### Day 14
-    implmented the K means clsutering algorithm from the scratch learned alot of the basic functionality
+  passed the processed titanic data thorugh the kMeans clustering to see how many people survived
+  and how many didnt getting fairly good prediction of about 70%
+
+ ### Day 14
+  implmented the K means clsutering algorithm from the scratch learned alot of the basic functionality
 
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/centroids.png)
 
-    tested our own k means on titanic data
-    compared results with sklearn kmeans
-    ours is fasters, maybe due to haevy sklearn imports
+  tested our own k means on titanic data
+  compared results with sklearn kmeans
+  ours is fasters, maybe due to haevy sklearn imports
 
 
-    
+### Day 15
+  Studied Means Shift
+  https://www.youtube.com/watch?v=3ERPpzrDkVg&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=39
+
+  Implemented the meanshift from numpy on the titanic data set.
+  and saw which group of people survived the most
+  conclusion: the ones who paid he most for their ticket survived
