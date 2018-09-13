@@ -157,3 +157,9 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   Implemented the meanshift from numpy on the titanic data set.
   and saw which group of people survived the most
   conclusion: the ones who paid he most for their ticket survived
+
+### Day 16
+  implemented Means Shift Algorithm from scratch to get the full understanding 
+  "with radius as 4 " for our easy of use
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/means_shift_r=4.png)
+
