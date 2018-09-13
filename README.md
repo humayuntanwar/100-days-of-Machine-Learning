@@ -160,6 +160,6 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
 ### Day 16
   implemented Means Shift Algorithm from scratch to get the full understanding 
-  "with radius as 4 " for our easy of use
+  "with radius as 4 " for our easy of us
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/means_shift_r=4.png)
 
