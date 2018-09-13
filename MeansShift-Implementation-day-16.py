@@ -95,7 +95,7 @@ for c in centroids:
 
 plt.show()
 
-
+##Now we wnat to make radius dynamic 
 
 
 

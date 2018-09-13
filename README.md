@@ -163,3 +163,9 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   "with radius as 4 " for our easy of us
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/means_shift_r=4.png)
 
+  implemented Means shift algorithm with a dynamic radius,
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/MSdynamicradius.png)
+
+  implemented it as data from make blob of sklearn
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/mswithblobn50.png)
+
