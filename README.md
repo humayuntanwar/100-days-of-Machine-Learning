@@ -169,3 +169,8 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   implemented it as data from make blob of sklearn
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/mswithblobn50.png)
 
+
+### DAY 17
+  STARTED LEARNING NEURAL NETWORKS (cool stuff)
+  https://www.youtube.com/watch?v=oYbVFhK_olY&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=43
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/img/neural.png)
