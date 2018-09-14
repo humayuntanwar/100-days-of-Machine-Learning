@@ -176,3 +176,4 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/img/neural.png)
 
   Installed and setup of TensorFlow
+  RAN TENSORFLOWWWWW
