@@ -174,3 +174,5 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   STARTED LEARNING NEURAL NETWORKS (cool stuff)
   https://www.youtube.com/watch?v=oYbVFhK_olY&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=43
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/img/neural.png)
+
+  Installed and setup of TensorFlow
