@@ -177,3 +177,6 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
   Installed and setup of TensorFlow
   RAN TENSORFLOWWWWW
+
+### DAY 18
+  Studied further about the implementation of neural networks and deep learning
