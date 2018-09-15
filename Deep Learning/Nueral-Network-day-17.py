@@ -8,6 +8,7 @@ x2 = tf.constant(6)
 #multiply
 result = tf.multiply(x1,x2)
 
+#test print
 print(result)
 #session, open session
 #sess = tf.Session()
