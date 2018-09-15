@@ -180,3 +180,6 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
 ### DAY 18
   Studied further about the implementation of neural networks and deep learning
+
+  modelled a neural network using the tensorflow library on the mnist data set
+  ##### Libraires Used: Tensor Flow
