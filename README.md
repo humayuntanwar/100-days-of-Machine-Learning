@@ -183,3 +183,8 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
   modelled a neural network using the tensorflow library on the mnist data set
   ##### Libraires Used: Tensor Flow
+
+### DAY 19
+  trained and tested the nueral network on the mnist data set
+  
+  ##### Libraires Used: Tensor Flow
