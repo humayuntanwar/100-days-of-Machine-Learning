@@ -188,3 +188,11 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   trained and tested the nueral network on the mnist data set
   
   ##### Libraires Used: Tensor Flow
+
+### DAY 20
+  Started working on a project where we will be creating a:
+  Setimental Analyzer to analyze postive and negative sentiments in our data set
+  Using a deep nueral Netwrok
+  today Installed Nltk and created a data set and did the imports 
+
+  ##### Libraires Used: Nltk, Numpy, random ,pickle, collections
