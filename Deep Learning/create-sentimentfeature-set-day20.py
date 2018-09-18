@@ -18,4 +18,63 @@ from collections import Counter
 lemmatizer = WordNetLemmatizer()
 hm_lines = 100000
 
+#read data in > stuff linto lexicon (do we care about any signle word?)
+def create_lexicon(pos,neg):
+    lexicon=[]
+    for fi in [pos,neg]:
+        with open(fi,'r') as f:
+            contents = f.readlines()
+            for l in contents[:hm_lines]:
+                all_words = word_tokenize(l.lower())
+                lexicon+= list(all_words)
+    
+    #lemitize all words, stemming into legimitate words
+    # input vector will be lexicon in length(short as possible wanted)
+    lexicon = [lemmatizer.lemmatize(i) for i in lexicon]
+    w_counts = Counter(lexicon) # dict like elements
+    #w_counts = {'the:'23, 'and': 344}
+    l2 = []
+    # we dont want common words like in, and , the words which occured more than 1000 and less than 50 are discarded
+    for w in w_counts:
+        if 1000 > w_counts[w] > 50:
+            l2.append(w)
+    return l2
+
+# func to classify feature set using lexicon 
+# takes, sample, lexicon  , and what classfication gonna be
+def sample_handling(sample, lexicon, classification):
+    featureset=[]
+    # [
+    #     [],
+    #     [1 0 1 1 0],[1,0]
+    #     [],
+    # ]
+    # open what ever sample is 
+    with open(sample, 'r') as f:
+        contents = f.readlines()
+        # for each of lines in our lines
+        for l in contents[:hm_lines]:
+            current_words = word_tokenize(l.lower())
+            # current word now lemitizer
+            current_words = [lemmatizer.lemmatize(i) for i in current_words]
+            features = np.zeros(len(lexicon))
+            # iterate through words ,a and set the index to 1 or plus 
+            for word in current_words:
+                if word.lower() in lexicon:
+                    index_value = lexicon.index(word.lower())
+                    features[index_value]=+1
+            features = list(features)
+            featureset.append([features,classification])
+    return featureset
+
+# create feaures in sets , 10% test size
+def create_feature_sets_and_labels(pos, neg,test_size=0.1):
+    lexicon = create_lexicon(pos,neg)
+    features= []
+    features +=sample_handling('pos.txt', lexicon[1,0])
+    features +=sample_handling('neg.txt', lexicon[1,0])
+    random.shuffle(features)
+    features = np.array(features)
+    testting/-size = int(test_size*len(features))
+
 

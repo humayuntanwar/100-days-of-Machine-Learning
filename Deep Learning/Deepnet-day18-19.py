@@ -87,7 +87,7 @@ def train_neural_network(x):
             print('Epoch',epoch,'completed out of', hm_epochs, 'Loss',epoch_loss)
         #arg max will return index of max value inthese arrays
         # hopping both are same using equal
-        correct = tf.equal(tf.arg_max(prediction,1),tf.arg_max(Y,1))
+        correct = tf.equal(tf.arg_max(prediction,1),tf.argmax(Y,1))
         #cast changes variable   and finding mean
         accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
         print('Accuracy', accuracy.eval({x:mnist.test.images,Y:mnist.test.labels}))
