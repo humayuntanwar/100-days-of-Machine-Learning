@@ -67,14 +67,14 @@ plt.show()
 ##DAY 6
 # R Squared Practical
 def squared_error(ys_original,ys_line):
-     # the amount of y distanced squaured
+    # the amount of y distanced squaured
      return sum ( ( ys_line-ys_original) ** 2  )
 
 def coeffient_of_determination(ys_original, ys_line):
     y_mean_line = [np.mean(ys_original) for y in ys_original] # finding mean lines for y originals
     squared_error_regression = squared_error(ys_original,ys_line) # regression error sqaured
     squared_error_y_mean = squared_error(ys_original,y_mean_line) # y meansqaurred
-    return 1 - (squared_error_regression / squared_error_y_mean)  # formual 1 - (all)
+    return 1 - (squared_error_regression / squared_error_y_mean)  # fosrmual 1 - (all)
 
 r_squared = coeffient_of_determination(ys, regression_line) # we want to know r sqaured value of regression_line
 print(r_squared)

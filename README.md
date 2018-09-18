@@ -196,3 +196,11 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   today Installed Nltk and created a data set and did the imports 
 
   ##### Libraires Used: Nltk, Numpy, random ,pickle, collections
+
+### DAY 21
+  implemnted further our sentimented analyzer
+  developed the lexicon
+  saved lexicon as a pickle
+  downloaded nltk libs
+  
+  ##### Libraires Used: Nltk, Numpy, random ,pickle, collections

@@ -6,7 +6,8 @@
 # [1 1 0 0]
 
 import nltk
-nltk.download('punkt')
+#nltk.download('punkt')
+#nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
 # tokennizez the sentences into words
 from nltk.stem import WordNetLemmatizer
@@ -19,6 +20,7 @@ from collections import Counter
 lemmatizer = WordNetLemmatizer()
 hm_lines = 100000
 
+#DAY 21
 #read data in > stuff linto lexicon (do we care about any signle word?)
 def create_lexicon(pos,neg):
     lexicon=[]
