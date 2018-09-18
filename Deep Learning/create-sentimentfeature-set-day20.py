@@ -6,6 +6,7 @@
 # [1 1 0 0]
 
 import nltk
+nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 # tokennizez the sentences into words
 from nltk.stem import WordNetLemmatizer
@@ -38,12 +39,15 @@ def create_lexicon(pos,neg):
     for w in w_counts:
         if 1000 > w_counts[w] > 50:
             l2.append(w)
+    print(len(l2))
     return l2
 
 # func to classify feature set using lexicon 
 # takes, sample, lexicon  , and what classfication gonna be
 def sample_handling(sample, lexicon, classification):
     featureset=[]
+    # 1, 0 pos
+    #0,1 neg
     # [
     #     [],
     #     [1 0 1 1 0],[1,0]
@@ -69,12 +73,25 @@ def sample_handling(sample, lexicon, classification):
 
 # create feaures in sets , 10% test size
 def create_feature_sets_and_labels(pos, neg,test_size=0.1):
-    lexicon = create_lexicon(pos,neg)
-    features= []
-    features +=sample_handling('pos.txt', lexicon[1,0])
-    features +=sample_handling('neg.txt', lexicon[1,0])
-    random.shuffle(features)
-    features = np.array(features)
-    testting/-size = int(test_size*len(features))
+    # create lexicon
+    lexicon = create_lexicon(pos,neg) 
+    features= [] #empty list
+    features += sample_handling('pos.txt', lexicon,[1,0]) # our classification for pos is 1,0
+    features += sample_handling('neg.txt', lexicon,[1,0]) # our calssification for neg is 0,1
+    random.shuffle(features) # shuffle for NN
+    features = np.array(features) # make features an array
+    testing_size = int(test_size*len(features)) # whole number length of features
+    #training data
+    train_x = list(features[:,0])  # all of zeroth elements
+    train_y = list(features[:,0])
+    #testing data
+    test_x = list(features[:,0][-testing_size:])
+    test_y = list(features[:,0][-testing_size:])
+
+    return train_x,train_y,test_x,test_y
 
 
+if __name__ == '__main__':
+    train_x,train_y,test_x,test_y = create_feature_sets_and_labels('pos.txt','neg.txt')
+    with open('sentiment_set.pickle','wb') as f:
+        pickle.dump([train_x,train_y,test_x,test_y],f)
