@@ -84,11 +84,11 @@ def create_feature_sets_and_labels(pos, neg,test_size=0.1):
     features = np.array(features) # make features an array
     testing_size = int(test_size*len(features)) # whole number length of features
     #training data
-    train_x = list(features[:,0][:-testing_size])  # all of zeroth elements
-    train_y = list(features[:,0][:-testing_size])
+    train_x = list(features[:,0][:-testing_size])
+    train_y = list(features[:,1][:-testing_size])
     #testing data
     test_x = list(features[:,0][-testing_size:])
-    test_y = list(features[:,0][-testing_size:])
+    test_y = list(features[:,1][-testing_size:])
 
     return train_x,train_y,test_x,test_y
 

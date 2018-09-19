@@ -13,7 +13,7 @@ n_classes = 2
 #batches of 100 features at a time
 batch_size = 100
 # height x width 
-x= tf.placeholder('float',[None,len(train_x[0])])
+x= tf.placeholder('float')
 y= tf.placeholder('float')
 
 # functions neural network model
@@ -50,7 +50,7 @@ def nueral_network_model(data):
 def train_neural_network(x):
     prediction = nueral_network_model(x)
     #calculate the difference of prediction we got to known label we have
-    cost = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits_v2( logits=prediction, labels=y) )
+    cost = tf.reduce_sum(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=y))
     # using adamoptimizer synonymous with gradient descent, minimize cost  
     optimizer = tf.train.AdamOptimizer().minimize(cost)
     #how many epochs we want , do a now num, if slow comp
@@ -68,15 +68,15 @@ def train_neural_network(x):
             while i < len(train_x):
                 start = i
                 end = i+batch_size
-                batch_x = np.array(train_x[start:end])
-                batch_y = np.array(train_y[start:end])
+                batch_x = train_x[start:end]
+                batch_y = train_y[start:end]
                 _,c = sess.run([optimizer, cost], feed_dict={x: batch_x,y: batch_y})
                 epoch_loss += c
                 i += batch_size
             print('Epoch',epoch+1,'completed out of', hm_epochs, 'Loss',epoch_loss)
         #arg max will return index of max value inthese arrays
         # hopping both are same using equal
-        correct = tf.equal(tf.arg_max(prediction,1),tf.argmax(y,1))
+        correct = tf.equal(tf.argmax(prediction,1),tf.argmax(y,1))
         #cast changes variable   and finding mean
         accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
         print('Accuracy', accuracy.eval({x:test_x,y:test_y}))
