@@ -84,8 +84,8 @@ def create_feature_sets_and_labels(pos, neg,test_size=0.1):
     features = np.array(features) # make features an array
     testing_size = int(test_size*len(features)) # whole number length of features
     #training data
-    train_x = list(features[:,0])  # all of zeroth elements
-    train_y = list(features[:,0])
+    train_x = list(features[:,0][:-testing_size])  # all of zeroth elements
+    train_y = list(features[:,0][:-testing_size])
     #testing data
     test_x = list(features[:,0][-testing_size:])
     test_y = list(features[:,0][-testing_size:])
@@ -97,3 +97,4 @@ if __name__ == '__main__':
     train_x,train_y,test_x,test_y = create_feature_sets_and_labels('pos.txt','neg.txt')
     with open('sentiment_set.pickle','wb') as f:
         pickle.dump([train_x,train_y,test_x,test_y],f)
+
