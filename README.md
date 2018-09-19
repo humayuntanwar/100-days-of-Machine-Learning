@@ -204,3 +204,10 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   downloaded nltk libs
   
   ##### Libraires Used: Nltk, Numpy, random ,pickle, collections
+
+### DAY 22
+  trained our neural network for the sentimental analyzer
+  tested on our positive and negative data
+  got a 56% accurary with 10 epochs
+
+  ##### Libraires Used: Nltk, Numpy, random ,pickle, collections, tf
