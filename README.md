@@ -211,3 +211,18 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   got a 56% accurary with 10 epochs
 
   ##### Libraires Used: Nltk, Numpy, random ,pickle, collections, tf
+
+### DAY 23
+  today we used the concept of the last two days to create a new sentimental analyzer
+  using the sentiment 140 data set ,(a large data set with million+ records)
+  we did all the previous steps:
+    lexicon creating
+    saved pickle
+    created neural network
+    trained nueral network
+    tested neural network on the data
+  ### Accuracy of 70 % :/
+  Good Productive day!!
+
+  ##### Libraires Used: Nltk, Numpy, random ,pickle, collections, tf
+
