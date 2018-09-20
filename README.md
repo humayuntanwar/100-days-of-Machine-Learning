@@ -223,6 +223,9 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
     tested neural network on the data
   ### Accuracy of 70 % :/
   Good Productive day!!
-
+  ```
+  Negative: He's an idiot and a jerk.
+  Positive: This was the best store i've ever seen.
+  ```
   ##### Libraires Used: Nltk, Numpy, random ,pickle, collections, tf
 
