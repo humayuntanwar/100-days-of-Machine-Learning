@@ -229,3 +229,19 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   ```
   ##### Libraires Used: Nltk, Numpy, random ,pickle, collections, tf
 
+### DAY 24
+  studied Recurrent Nueral Network
+  https://www.youtube.com/watch?v=hWgGJeAvLws&index=54&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v
+
+  https://www.youtube.com/watch?v=BwmddtPFWtA
+
+  Implemented a practice of RNN using the tensor flow RNN on the mnist data set
+  set epoch as 2, got an accuracy of 96%
+  
+  ```
+  Epoch 0 completed out of 2 Loss 199.0914273094386
+  Epoch 1 completed out of 2 Loss 54.36276028677821
+  Accuracy 0.9664
+  ```
+
+  
