@@ -243,5 +243,23 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   Epoch 1 completed out of 2 Loss 54.36276028677821
   Accuracy 0.9664
   ```
+  ##### Libraires Used:  tensorflow
 
+
+### DAY 25
+  studied COnvolutional Nueral Network
+  https://www.youtube.com/watch?v=FmpDIaiMIeA
+  https://www.youtube.com/watch?v=mynJtLhhcXk&index=57&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v
+
+  Implemented a example of  CNN using the tensor flow library on the mnist data set
+  set epoch as 2, got an accuracy of 96%
+  
+  ```
+  Epoch 0 completed out of 2 Loss 1979521.6321105957
+  Epoch 1 completed out of 2 Loss 396292.73056030273
+  Accuracy 0.9513 
+  ```
+  ##### Libraires Used:  tensorflow
+
+    ##### less than that of RNN
   
