@@ -262,4 +262,5 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   ##### Libraires Used:  tensorflow
 
     ##### less than that of RNN
+      because of the size of the dataset
   

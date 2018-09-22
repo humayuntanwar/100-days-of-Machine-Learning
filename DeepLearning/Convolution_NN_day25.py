@@ -19,6 +19,9 @@ rnn_size = 128
 x = tf.placeholder('float32', [None, 784])
 Y = tf.placeholder('float32')
 
+keep_rate = 0.8
+keep_prob = tf.placeholder(tf.float32)
+
 #takes one pixels at a time usings strides
 def conv2d(x,W):
     return tf.nn.conv2d(x,W,strides=[1,1,1,1],padding='SAME')
@@ -49,10 +52,12 @@ def convolutional_nueral_network_model(x):
     conv2 = conv2d(conv1,weights['W_conv2'])
     conv2 = maxpool2d(conv2)
 
+    #fully connected
     fc = tf.reshape(conv2,[-1,7*7*64])
     #relu = rectified linear
     fc = tf.nn.relu(tf.matmul(fc,weights['W_fc'])+ biases['b_fc'])
 
+    fc = tf.nn.dropout(fc,keep_rate)
     output = tf.add(tf.matmul(fc,weights['out']),biases['out'])
     return output
 
