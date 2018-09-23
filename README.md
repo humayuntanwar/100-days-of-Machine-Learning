@@ -264,4 +264,17 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
     ##### less than that of RNN
       because of the size of the dataset
   
+### DAY 26
+  today we learned out the highlevel API called TFLEARN
+  and implemented the same CNN using the tflearn
+  code is reduce to almost half the lines and most functions are already implemented
+
+  using the mnist data set trained and tested a CNN with 2 layers 
+  got decent result
+
+  ##### Libraires Used:  tflearn
+
+  #### set up google colab as well 
+  difficult thing need to learn more we going to the cloud
+
 
