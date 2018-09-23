@@ -277,4 +277,20 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   #### set up google colab as well 
   difficult thing need to learn more we going to the cloud
 
+  #### OPEN AI
+  Started With OPEN AI.
+  first steps making an agent for the cart pole game 
+
+  collected training data based on 10k iterations 
+  ```
+Average accepted scores: 61.864102564102566
+median accepted scores: 57.5
+
+Counter({51.0: 33, 52.0: 28, 50.0: 27, 55.0: 25, 53.0: 24, 54.0: 21, 56.0: 19, 57.0: 18, 59.0: 16, 58.0: 14, 66.0: 14, 60.0: 12, 62.0: 11, 64.0: 9, 63.0: 9, 76.0: 9, 81.0: 8, 67.0: 7, 61.0: 7, 65.0: 7, 71.0: 6, 69.0: 5, 82.0: 5, 77.0: 5, 68.0: 5, 78.0: 4, 72.0: 3, 73.0: 3, 70.0: 3, 92.0: 3, 85.0: 3, 74.0: 2, 88.0: 2, 86.0: 2, 91.0: 2, 75.0: 2, 87.0: 2, 90.0: 2,
+98.0: 2, 80.0: 1, 118.0: 1, 93.0: 1, 89.0: 1, 84.0: 1, 79.0: 1, 113.0: 1, 96.0: 1, 123.0: 1, 111.0: 1, 101.0: 1})
+```
+  ##### Libraires Used:  tflearn, Gym, numpy, random, Collections
+
+
+
 
