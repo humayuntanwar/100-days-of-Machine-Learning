@@ -16,7 +16,7 @@ from collections import Counter
 #learning rate
 LR = 1e-3
 #env game name
-env = gym.make('CartPole-v0')
+env = gym.make('CartPole-v1').env
 # start env
 env.reset()
 #every frame we go , we get a score on every frame , if pole balance +1 to score
@@ -104,7 +104,7 @@ def initial_population():
 def nueral_network_model(input_size):
     #input layer
     network = input_data(shape=[None,input_size,1],name='input')
-    #full connected layer
+    #fully connected layers
     network = fully_connected(network,128,activation='relu')
     network = dropout(network,0.8)
     
@@ -124,6 +124,7 @@ def nueral_network_model(input_size):
     network = fully_connected(network,2,activation='softmax')
     network = regression(network,optimizer='adam',learning_rate=LR,loss='categorical_crossentropy',name='targets')
 
+    #using deep NN from tflearn
     model = tflearn.DNN(network,tensorboard_dir='log')
 
     return model
@@ -131,15 +132,54 @@ def nueral_network_model(input_size):
 #train model
 def train_model(training_data, model=False):
     #observations
-    X = np.array([i[0] for i in training_data]).reshape(-1,len(training_data[0]),1)
+    X = np.array([i[0] for i in training_data]).reshape(-1,len(training_data[0][0]),1)
     y = [i[1] for i in training_data]    
     
+    #create model if not exist
     if not model:
         model = nueral_network_model(input_size =len(X[0]))
     
+    #epch more than 3 overfits
     model.fit({'input':X},{'targets':y},n_epoch=3,snapshot_step=500,show_metric=True,run_id='openaistuff')
 
     return model
-
+#train data
 training_data = initial_population()
+#train model
 model = train_model(training_data)
+
+
+#DAY 28
+#save the model
+#model.save('gamemodel.model')
+# load the model
+#model.load('gamemodel.model')
+
+scores = []
+choices = []
+#testing for 100 games
+for each_game in range(100):
+    score = 0
+    game_memory =[]
+    prev_obs =[]
+    env.reset()
+    for _ in range(goal_steps):
+        #env.render()
+        if len(prev_obs)==0:
+            action = random.randrange(0,2)
+        else:
+            action = np.argmax(model.predict(prev_obs.reshape(-1,len(prev_obs),1))[0])
+        choices.append(action)
+
+        new_observation,reward , done, info = env.step(action)
+        prev_obs = new_observation
+        game_memory.append([new_observation,action])
+        score  += reward
+        if done:
+            break
+    scores.append(score)
+
+print('Averge scores',sum(scores)/len(scores))
+print('Choice 1; {},choice 2: {}'.format(choices.count(1)/len(choices),choices.count(0)/len(choices)))
+
+

@@ -130,7 +130,7 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
 
   
 
- ### Day 13
+### Day 13
   
   today i practiced the handling of non numeric values in data using the titanic data set.
   the approach we used was identifying unique elements in colums and asigning them values
@@ -140,7 +140,7 @@ https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-l
   passed the processed titanic data thorugh the kMeans clustering to see how many people survived
   and how many didnt getting fairly good prediction of about 70%
 
- ### Day 14
+### Day 14
   implmented the K means clsutering algorithm from the scratch learned alot of the basic functionality
 
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/plots/centroids.png)
@@ -291,6 +291,38 @@ Counter({51.0: 33, 52.0: 28, 50.0: 27, 55.0: 25, 53.0: 24, 54.0: 21, 56.0: 19, 5
 ```
   ##### Libraires Used:  tflearn, Gym, numpy, random, Collections
 
+### DAY 27
 
+we trained our model for the Cartpole game
 
+  ##### Libraires Used:  tflearn, Gym, numpy, random, Collections
 
+### DAY 28
+
+  tested the trained model to see our results
+```
+Averge scores 497.3
+Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
+```
+
+  ##### Libraires Used:  tflearn, Gym, numpy, random, Collections
+
+  #### some variables
+  ```
+  env = gym.make('CartPole-v1').env
+  #every frame we go , we get a score on every frame , if pole balance +1 to score
+  goal_steps = 500
+  #min score
+  score_requirement = 50
+  #num of times games run
+  initial_games = 10000
+
+  5 network layers
+  epoch = 3
+  games ran = 100
+  ```
+  #### Note
+  ``` 
+  to view the game :
+    uncomment env.render() on line 167
+  ```
