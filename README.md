@@ -326,3 +326,18 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   to view the game :
     uncomment env.render() on line 167
   ```
+
+### DAY 29
+  started working on a new project
+  ##### Dogs VS Cats Kaggle challenge Using TFlearn CNN
+  
+  step 1 :
+    clean the data to get it ready for training, we got the daata from kaggle, resized images to 50x50
+    using CV2 coverted to greyscale all images are now 2d numpy array
+  
+  step 2 :
+    process the data , create labels according to the image files names clean the names . using split
+    create train data function, save trained data 
+  
+  step 3 :
+    process the test data almost same as train data function
