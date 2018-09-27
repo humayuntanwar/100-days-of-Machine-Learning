@@ -358,7 +358,9 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   ```
   step 6 :
     tested our model 
+
   ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DogsvsCats/cats_dogs_classified.png)
+  
 
   step 7 :
     created a CSV for kaggle submission
