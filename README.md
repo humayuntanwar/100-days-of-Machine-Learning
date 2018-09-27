@@ -341,3 +341,25 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   
   step 3 :
     process the test data almost same as train data function
+
+### DAY 30
+  continued working on :
+  ##### Dogs VS Cats Kaggle challenge Using TFlearn CNN
+
+  step 4 :
+    created our own CNN, using the one we created when we learned TFLearn
+  ```
+    we have 6 layers
+  ```
+  step 5 : 
+    train the model using tflearn model.fit 
+  ```
+  epoch = 2
+  ```
+  step 6 :
+    tested our model 
+  ![Alt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DogsvsCats/cats_dogs_classified.png)
+
+  step 7 :
+    created a CSV for kaggle submission
+
