@@ -4,3 +4,5 @@ checkpoint
 dogsvscats-0.001-6conv-basic.model.data-00000-of-00001
 dogsvscats-0.001-6conv-basic.model.index
 dogsvscats-0.001-6conv-basic.model.meta
+test_data.npy
+submissio-file.csv
