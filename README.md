@@ -365,3 +365,16 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   step 7 :
     created a CSV for kaggle submission
 
+### DAY 31
+  started working on yet another kaggle challenge, lung cancer detection 
+  the data set is too large to download
+  so i will work in the kaggle kernal on a reduced data set.
+  
+  step 1 :
+    get all the imports configured and directories set up
+  
+  step 2 :
+    set up slices of the images
+  
+  step 3 :
+  visulaize the images as 150x150 , using matplotlib resizing each image using opencv
