@@ -378,3 +378,8 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   
   step 3 :
   visulaize the images as 150x150 , using matplotlib resizing each image using opencv
+
+  
+### DAY 32
+	COMPLETED the lung cancer kaggle challenge
+	will provide detailed update
