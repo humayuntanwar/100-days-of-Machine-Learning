@@ -383,3 +383,6 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 ### DAY 32
 	COMPLETED the lung cancer kaggle challenge
 	will provide detailed update
+
+### DAY 33
+  started working on data analytics to preprocess data sets (very important skill`)
