@@ -386,3 +386,10 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
 ### DAY 33
   started working on data analytics to preprocess data sets (very important skill`)
+
+### DAY 34
+  today continued working with pandas and Dataframe
+  tried to do many different pandas operations to a sample dataset(dict)
+
+  further did more pandas methods implementations
+  such as change files types, columns names, remove columns set indexs
