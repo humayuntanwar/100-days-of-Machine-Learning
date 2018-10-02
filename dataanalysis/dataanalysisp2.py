@@ -57,6 +57,6 @@ print(df.visitors.tolist())
 #use numpy
 print(np.array(df[['bounce_rate','visitors']]))
 
-#can you this
+#can you do this
 df2 = pd.DataFrame(np.array(df[['bounce_rate','visitors']]))
 print(df2)

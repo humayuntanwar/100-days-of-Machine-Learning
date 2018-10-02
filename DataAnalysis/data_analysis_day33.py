@@ -1,3 +1,4 @@
+#simple example to print a data set from googl and iex data
 import datetime
 import pandas as pd
 import pandas_datareader.data as web

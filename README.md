@@ -393,3 +393,13 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   further did more pandas methods implementations
   such as change files types, columns names, remove columns set indexs
+
+### DAY 35
+  learned 
+  -buildind a datset
+  -get html
+  -concatanation
+  -appending
+
+  ### dataset
+  created or own data set for house price index of all 50 states of USA
