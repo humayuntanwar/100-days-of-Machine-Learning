@@ -403,3 +403,20 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   ### dataset
   created or own data set for house price index of all 50 states of USA
+
+### DAY 36
+  Correlation and Percent Change
+  worked on the both functions of pandas, created another dataset from quandl of all the house prices Index of all the USA and found the correlation between all the states
+
+  ```all  50 states HPI data from quandl  visualized```
+
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/alldata.png)
+
+  ```percent changed based on the colums names of each state ```
+
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/pct_colbased.png)
+
+  ```Avg of all Usa```
+  
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/usaavg.png)
+
