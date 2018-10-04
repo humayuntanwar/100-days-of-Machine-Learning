@@ -77,7 +77,7 @@ def HPI_Benchmark():
 #read pickle
 #grab_initial_state_data()
 HPI_data = pd.read_pickle('fifty_states3.pickle')
-benchmark = HPI_Benchmark()
+#benchmark = HPI_Benchmark()
 #modifying columns
 #HPI_data['TX2'] = HPI_data['TX'] *2
 #print(HPI_data[['TX','TX2']]) 
@@ -88,21 +88,109 @@ from matplotlib import style
 style.use('fivethirtyeight')
 fig = plt.figure()
 #sub plot with 1x1 grid
-ax1 = plt.subplot2grid((1,1), (0,0))
+ax1 = plt.subplot2grid((2,1), (0,0))
 # plot entire data fram
-HPI_data.plot(ax = ax1)
-benchmark.plot(ax=ax1,color='k',linewidth=10)
-plt.legend().remove()
-plt.show()
+#HPI_data.plot(ax = ax1)
+#benchmark.plot(ax=ax1,color='k',linewidth=10)
+#plt.legend().remove()
+#plt.show()
 
 #measure in percent change
 
 #corelation 
 #see correlation of all states all on left to right mapped
-HPI_State_Correlation = HPI_data.corr()
-print(HPI_State_Correlation)
+#HPI_State_Correlation = HPI_data.corr()
+#print(HPI_State_Correlation)
 
 #gives a descriptions , since is a dataframe
-print(HPI_State_Correlation.describe())
+#print(HPI_State_Correlation.describe())
+
+### DAY 37
+## RESAMPLING
+'''
+## change the sample weight of the data we are looking at
+# define a new column, put the value of resampling as H=hourly, M=monthly and so on, A= annual
+# resampling by mean, how =ohlc open high low close
+TX1yr = HPI_data['TX'].resample('A',how='mean') #resampled by year
+#lets print head
+print(TX1yr.head())
 
 
+#ploting taxes state , add label
+HPI_data['TX'].plot(ax = ax1,  label='MOnthly TX HPI')
+#plot
+TX1yr.plot(ax=ax1, label='Yearly TX HPI')
+plt.legend().remove()
+plt.show()
+'''
+### HANDLING MISSING DATA
+'''
+we have 4 options
+1 ignore
+2 delete it
+3 fill missing data(previous, future copy it)
+4 replace it with static data or other
+
+'''
+# delete it 
+#HPI_data['TX1yr'] = HPI_data['TX'].resample('A',how='mean')
+#print(HPI_data[['TX','TX1yr']].head())
+
+# drop any existance of NaN
+
+#dropna = how=all drop all, any, passes a thrashhold
+#HPI_data.dropna(how='all',inplace=True)
+
+#HPI_data.dropna(inplace=True)
+
+# fill na , fill forward
+#HPI_data.fillna(method='ffill',inplace=True)
+
+# fill na , fill backwards
+#HPI_data.fillna(method='bfill',inplace=True)
+
+# will with static data
+#HPI_data.fillna(value=-99999,inplace=True)
+
+#fillna limit
+#HPI_data.fillna(value=-99999,limit=10,inplace=True)
+#check how many nan remaining
+#print(HPI_data.isnull().values.sum())
+'''#print(HPI_data[['TX','TX1yr']].head())
+
+
+HPI_data[['TX','TX1yr']].plot(ax=ax1)
+plt.legend(loc=4)
+plt.show()
+'''
+###ROLLING STATISTICS
+#take a window of time and do many functions like , sum , mean, max
+#rooling apply > make your function apply on your rolling data
+
+# lets calc rolling mean, howmuch time ,12 months 
+
+ax2 = plt.subplot2grid((2,1), (1,0),sharex=ax1)
+
+#12 month for fitting avg
+HPI_data['TX12MA'] = HPI_data['TX'].rolling(12).mean()
+
+#lets do # std deviation 12 months
+HPI_data['TX12MASTD'] = HPI_data['TX'].rolling(12).std()
+
+print(HPI_data[['TX','TX12MA']].head())
+#if we look at the plot there is significent gap in starting to handle this we will use drop na
+#HPI_data.dropna(inplace=True)
+#HPI_data[['TX','TX12MA']].plot(ax=ax1)
+#HPI_data['TX12MASTD'].plot(ax=ax2)
+
+
+#correlations
+TX_AK_12corr = HPI_data['TX'].rolling(12).corr(HPI_data['AK'])
+HPI_data['TX'].plot(ax=ax1,label='TX HPI')
+HPI_data['AK'].plot(ax=ax1,label='TX AK')
+ax1.legend(loc=4)
+TX_AK_12corr.plot(ax=ax2, label='TX_AK_12corr')
+
+#plot
+plt.legend(loc=4)
+plt.show()

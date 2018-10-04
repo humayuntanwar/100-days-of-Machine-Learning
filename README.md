@@ -420,3 +420,24 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   
   ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/usaavg.png)
 
+### DAY 37
+  first task we did was Resampling
+  
+  second task Handling Missing Data
+  there are four options we did them all
+
+    ```
+      we have 4 options
+      1 ignore
+      2 delete it
+      3 fill missing data(previous, future copy it)
+      4 replace it with static data or other
+
+    ```
+  Rolling Statistics
+  ```
+  Rolling mean for 12 months data
+  Rolling Std  for 12 months
+  Rolling correlation between texas and arkansas
+
+  ```
