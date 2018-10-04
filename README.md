@@ -418,11 +418,11 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   ```Avg of all Usa```
   
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/usaavg.png)
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/usaavg.png)
 
 ### DAY 37
   first task we did was Resampling
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/resampled.png)
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/resampled.png)
 
   second task Handling Missing Data
   there are four options we did them all
@@ -430,17 +430,17 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   2 delete it
 
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/droppedna.png)
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/droppedna.png)
 
   3 fill missing data(previous, future copy it)
 
   BACK FILL
 
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/backfill.png)
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/backfill.png)
 
   FILL FORWARD
 
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/fillforward.png)
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/fillforward.png)
   
   4 replace it with static data or other
 
@@ -453,13 +453,16 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   ```
   MEAN STD
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/stdmean.png)
+  
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/stdmean.png)
 
   MEAN with 2 AXS
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/meanwith2ax.png)
+
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/meanwith2ax.png)
 
   CORRELATION
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/txakcrr.png)
+
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/txakcrr.png)
 
 
   Comparison Operators
@@ -467,5 +470,6 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   removing errornous data points
   ```
   WITH STD 
-  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/withstd.png)
+
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/withstd.png)
 
