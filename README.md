@@ -422,18 +422,29 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
 ### DAY 37
   first task we did was Resampling
-  
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/resampled.png)
+
   second task Handling Missing Data
   there are four options we did them all
+  1 ignore
 
-    ```
-      we have 4 options
-      1 ignore
-      2 delete it
-      3 fill missing data(previous, future copy it)
-      4 replace it with static data or other
+  2 delete it
 
-    ```
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/droppedna.png)
+
+  3 fill missing data(previous, future copy it)
+
+  BACK FILL
+
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/backfill.png)
+
+  FILL FORWARD
+
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/fillforward.png)
+  
+  4 replace it with static data or other
+
+    
   Rolling Statistics
   ```
   Rolling mean for 12 months data
@@ -441,7 +452,20 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   Rolling correlation between texas and arkansas
 
   ```
+  MEAN STD
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/stdmean.png)
+
+  MEAN with 2 AXS
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/meanwith2ax.png)
+
+  CORRELATION
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/txakcrr.png)
+
+
   Comparison Operators
   ```
   removing errornous data points
   ```
+  WITH STD 
+  ![ALt Tex](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/withstd.png)
+
