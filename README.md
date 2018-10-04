@@ -453,16 +453,16 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   ```
   MEAN STD
-  
+
   ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/stdmean.png)
 
   MEAN with 2 AXS
 
-  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/meanwith2ax.png)
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/stdmeanwith2ax.png)
 
   CORRELATION
 
-  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/txakcrr.png)
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/txakcorr.png)
 
 
   Comparison Operators
