@@ -76,7 +76,7 @@ def HPI_Benchmark():
 ##percent change and correlation tables 
 #read pickle
 #grab_initial_state_data()
-HPI_data = pd.read_pickle('fifty_states3.pickle')
+HPI_data = pd.read_pickle('fifty_states.pickle')
 #benchmark = HPI_Benchmark()
 #modifying columns
 #HPI_data['TX2'] = HPI_data['TX'] *2
@@ -177,7 +177,7 @@ HPI_data['TX12MA'] = HPI_data['TX'].rolling(12).mean()
 #lets do # std deviation 12 months
 HPI_data['TX12MASTD'] = HPI_data['TX'].rolling(12).std()
 
-print(HPI_data[['TX','TX12MA']].head())
+#print(HPI_data[['TX','TX12MA']].head())
 #if we look at the plot there is significent gap in starting to handle this we will use drop na
 #HPI_data.dropna(inplace=True)
 #HPI_data[['TX','TX12MA']].plot(ax=ax1)
@@ -185,12 +185,76 @@ print(HPI_data[['TX','TX12MA']].head())
 
 
 #correlations
-TX_AK_12corr = HPI_data['TX'].rolling(12).corr(HPI_data['AK'])
-HPI_data['TX'].plot(ax=ax1,label='TX HPI')
-HPI_data['AK'].plot(ax=ax1,label='TX AK')
-ax1.legend(loc=4)
-TX_AK_12corr.plot(ax=ax2, label='TX_AK_12corr')
+# TX_AK_12corr = HPI_data['TX'].rolling(12).corr(HPI_data['AK'])
+# HPI_data['TX'].plot(ax=ax1,label='TX HPI')
+# HPI_data['AK'].plot(ax=ax1,label='TX AK')
+# ax1.legend(loc=4)
+# TX_AK_12corr.plot(ax=ax2, label='TX_AK_12corr')
 
-#plot
-plt.legend(loc=4)
-plt.show()
+# #plot
+# plt.legend(loc=4)
+# plt.show()
+
+
+
+### DAY 38
+## JOINING 30 YEARS OF DATA 
+def mortgage_30y():
+    df = df = quandl.get('FMAC/MORTG',trim_start='1975-01-01',authtoken=api_key)
+    #use the same formula as above to eget pct change
+    df['Value'] = (df['Value']-df['Value'][0]) / df['Value'][0] * 100.0 
+    df=df.resample('1D').mean()
+    df=df.resample('M').mean()
+    return df
+
+
+
+#print(state_HPI_M30.corr()['M30'].describe())
+
+
+## ADDING OTHER ECONOMIC INDICATORS
+'''
+There are two major economic indicators that come to mind out the gate: 
+S&P 500 index (stock market) and GDP (Gross Domestic Product). 
+I suspect the S&P 500 to be more correlated than the GDP,
+but the GDP is usually a better overall economic indicator, so I may be wrong.
+
+'''
+def sp500_data():
+    df = quandl.get("MULTPL/SP500_REAL_PRICE_MONTH", trim_start="1975-01-01", authtoken=api_key)
+    df.columns = ['Adjusted Close']
+
+    df["Adjusted Close"] = (df["Adjusted Close"]-df["Adjusted Close"][0]) / df["Adjusted Close"][0] * 100.0
+    df=df.resample('M').mean()
+    df.rename(columns={'Adjusted Close':'sp500'}, inplace=True)
+    df = df['sp500']
+    return df
+
+def gdp_data():
+    df = quandl.get("BCB/4385", trim_start="1975-01-01", authtoken=api_key)
+    df["Value"] = (df["Value"]-df["Value"][0]) / df["Value"][0] * 100.0
+    df=df.resample('M').mean()
+    df.rename(columns={'Value':'GDP'}, inplace=True)
+    df = df['GDP']
+    return df
+
+def us_unemployment():
+    df = quandl.get("EIA/STEO_XRUNR_M", trim_start="1975-01-01", authtoken=api_key)
+    df.columns = ['Unemployment Rate']
+    df["Unemployment Rate"] = (df["Unemployment Rate"]-df["Unemployment Rate"][0]) / df["Unemployment Rate"][0] * 100.0
+    df=df.resample('1D').mean()
+    df=df.resample('M').mean()
+    return df
+
+m30 = mortgage_30y()
+HPI_bench = HPI_Benchmark()
+#print(df.head())
+state_HPI_M30 = HPI_data.join(m30)
+m30.columns=['M30']
+sp500 = sp500_data()
+gdp = gdp_data()
+unemployment = us_unemployment()
+HPI = HPI_data.join([HPI_bench,m30,sp500,gdp,unemployment])
+HPI.dropna(inplace=True)
+print(HPI.corr())
+HPI.to_pickle('HPI.pickle')

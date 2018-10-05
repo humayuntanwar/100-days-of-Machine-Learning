@@ -473,3 +473,32 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/DataAnalysis/plots/withstd.png)
 
+
+# DAY 38
+  worked on joining data of past 30 years of mortgage data
+  and correlation with HPI benchmark 
+
+  There are two major economic indicators that come to mind out the gate: 
+  S&P 500 index (stock market) and GDP (Gross Domestic Product). 
+  I suspect the S&P 500 to be more correlated than the GDP,
+  but the GDP is usually a better overall economic indicator, so I may be wrong.
+
+  ```
+  United States                M30     sp500       GDP  Unemployment Rate
+  United States           1.000000 -0.767832  0.783658  0.606749           0.016109
+  M30                    -0.767832  1.000000 -0.771786 -0.821402          -0.348474
+  sp500                   0.783658 -0.771786  1.000000  0.653067          -0.172186
+  GDP                     0.606749 -0.821402  0.653067  1.000000           0.499369
+  Unemployment Rate       0.016109 -0.348474 -0.172186  0.499369           1.000000
+  ```
+
+  Saved all the data as HPI.pickle
+  and now applied
+      Rolling Apply and Mapping Functions
+
+  #### working on combining all functions
+    created a labels functions to map current and future values
+    created a moving avg function
+
+  #### feeding through scikit learn ML
+      passing thorugh SVM of scikit learn we got ACCURACY = 0.792452830189
