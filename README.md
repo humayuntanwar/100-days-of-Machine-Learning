@@ -321,11 +321,19 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   epoch = 3
   games ran = 100
   ```
+  ```
+  CP Agent — Open AI cartPole agent Using CNN
+      Collected Training data using 10000 iterations
+      Created Convolutional Neural Network with 5 hidden layers
+      Trained & Tested our model for 100 games using Tflearn 
+      Achieved Average Score of 500
+  ```
   #### Note
   ``` 
   to view the game :
     uncomment env.render() on line 167
   ```
+
 
 ### DAY 29
   started working on a new project
@@ -382,7 +390,16 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   
 ### DAY 32
 	COMPLETED the lung cancer kaggle challenge
-	will provide detailed update
+
+  ```
+  Lung Cancer Detection — 3D CNN on Medical Imaging 
+      Using pydicom read 3d dicom data into a dataset, assigned labels
+      Visualized lung image slices to see cancer particles
+      Resized & grayscale Images into 150x150  images using  OpenCV
+      Created 3D Conv Net using Tflearn
+      Trained and tested our Conv Net
+
+  ```
 
 ### DAY 33
   started working on data analytics to preprocess data sets (very important skill`)
@@ -516,4 +533,11 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   -Creating Labels and Moving Average for the data
   -Using ScikitLearn to pass our Data into SVM for MAchine Learning Classification
   -With an Accurarcy of 70% we can say it will rise
+  ```
+  ```
+  HPI PREDICT— Predicting House Price Index of USA
+      Gathered HPI, Mortgage, Unemployment data of 30 years
+      Filtered, Joined Data from different sources
+      Created Benchmark, Features, Moving Average
+      Applied Machine Learning SVM classification for Prediction
   ```
