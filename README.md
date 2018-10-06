@@ -541,3 +541,11 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
       Created Benchmark, Features, Moving Average
       Applied Machine Learning SVM classification for Prediction
   ```
+
+# DAY 39
+  ### DATA VISUALIZATION
+    Line and Introduction
+    lengends titles and labels
+    Barchats and Histogram
+    Scatter plot
+    Stack plot
