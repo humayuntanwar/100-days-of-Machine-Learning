@@ -502,3 +502,18 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   #### feeding through scikit learn ML
       passing thorugh SVM of scikit learn we got ACCURACY = 0.792452830189
+
+  ##### Completed project details
+  ##### Predicting Housing Price Index of USA will rise or doesnot
+  ```
+  -Gathered data from Quandl 
+  -Joining Data into one Data Set from different resourses using Pandas
+  -Renaming data columns according to our specifications
+  -Collection of past 30 years Mortgage Data
+  -Collection of past 30 years unemployment Rate
+  -Collection of past 30 years of GDP data
+  -Create a Bench mark to measure Agianst
+  -Creating Labels and Moving Average for the data
+  -Using ScikitLearn to pass our Data into SVM for MAchine Learning Classification
+  -With an Accurarcy of 70% we can say it will rise
+  ```
