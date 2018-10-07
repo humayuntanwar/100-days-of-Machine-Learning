@@ -544,8 +544,19 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
 # DAY 39
   ### DATA VISUALIZATION
-    Line and Introduction
-    lengends titles and labels
-    Barchats and Histogram
-    Scatter plot
-    Stack plot
+    #### Putting all in one jupyter notebook
+      Line and Introduction
+      lengends titles and labels
+      Barchats and Histogram
+      Scatter plot
+      Stack plot
+
+# DAY 40
+  #### Continued Data Visualization
+    detailed description in jupyter notebook
+    Pie Charts
+    Loading data from files into displaying a graph
+    another way we can read the file is using numpy lets do an example of that
+    load the data from the Internet for graphs
+    Basic Customization
+    Candle stick and Open High Low Close graphs
