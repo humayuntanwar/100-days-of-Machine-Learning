@@ -563,4 +563,5 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
 # DAY 41
     Live Graphs
-    
+    Annotation nad labels in graphs
+    Added all code to notebook as well
