@@ -560,3 +560,7 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
     load the data from the Internet for graphs
     Basic Customization
     Candle stick and Open High Low Close graphs
+
+# DAY 41
+    Live Graphs
+    
