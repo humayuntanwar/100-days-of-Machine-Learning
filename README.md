@@ -567,3 +567,11 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
     Added all code to notebook as well
     3D plots added
       scatter and bar , and complex graphs
+
+# DAY 42
+  Started Learnig Dash for Graphs and web gui
+  Dash helps you to build web-based data visualization interfaces by tying together Plot.ly, React, and Flask.
+  ```
+  To use Dash, we need the following packages: 
+  dash, dash-renderer, dash-html-components, dash-core-components, and plotly.
+  ```
