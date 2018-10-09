@@ -575,8 +575,16 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   To use Dash, we need the following packages: 
   dash, dash-renderer, dash-html-components, dash-core-components, and plotly.
   ```
+  sample webpage from dv_dash.py
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/Dash/dash_1.png)
+  
   worked on input output for the dash app using dash and app callback
   ```
   from dash.dependencies import Input, Output
   ```
+  sample calculation from dv_dashio.py
+  ![ALt Text](https://github.com/humayuntanwar/Machine-Learning/blob/master/Dash/dashcalc.png)
+  
+
+
   
