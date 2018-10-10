@@ -56,15 +56,10 @@ def update_value(input_data):
     #     return '{} not a valid ticker'.format(input_data)
     # else:
     #df=quandl.get(input_data, authtoken=api_key, start_date=start,end_date=end)
-    '''
-
-    NOT WORKING LOLOLOL
-    
-    '''
     df = web.DataReader('WIKI/'+input_data,'quandl',start, end,access_key=apikey)
     df.reset_index(inplace=True)
     df.set_index("Date", inplace=True)
-    df = df.drop("Symbol", axis=1)
+    #df = df.drop("Symbol", axis=1)
         #return graph
     return dcc.Graph(
         id='example-graph',

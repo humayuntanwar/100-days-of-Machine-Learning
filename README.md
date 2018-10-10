@@ -587,4 +587,6 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   
 
 
-  
+# DAY 43
+  working on making dash live data app
+  looks beautiful
