@@ -595,4 +595,4 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   started working on live updates using live data 
   for this we are using sample data with deqeue options to random updates
 
-  ![Alt Text](https://www.useloom.com/share/f7f5f926b7be45f0ab50f6c62ddfee17)
+  [![DASH Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://www.useloom.com/share/f7f5f926b7be45f0ab50f6c62ddfee17 "DASH Is AWESOME")
