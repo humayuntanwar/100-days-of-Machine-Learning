@@ -597,3 +597,15 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
   CLICK on IMAGE
   [![Click to view](https://github.com/humayuntanwar/Machine-Learning/blob/master/Dash/preview.png)](https://www.useloom.com/share/f7f5f926b7be45f0ab50f6c62ddfee17 "DASH Is AWESOME")
+
+
+# DAY 45
+  worked on making a mock app for vehical data live updates
+  implemented more styling is dash
+  included external css and js in dash
+  made more flexible layout 
+  made drop down menus 
+
+  take a look here!! click on img!
+  [![Click to view](https://github.com/humayuntanwar/Machine-Learning/blob/master/Dash/preview.png)](https://www.useloom.com/share/ff876c94a3774caca83e714da5984956 "DASH Is AWESOME")
+  
