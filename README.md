@@ -612,4 +612,14 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
 
 # DAY 46
   started working on a new project which will have sentimental analysis with dash web interface.
-  ### Libraires Used: TextBlob, vader and dash
+  ### Libraires Used: TextBlob, vader 
+
+# DAY 47
+  we compared textblob and vader sentiment using a sample neg and pos sentiment files
+
+  ```
+  Text Blob gives a better accuracy with polarity of 0.0001
+  Vader is 2 times faster in sentiment analysis but a little less accurate with threashold of 0.05
+  ```
+  ### Libraires Used: TextBlob, vader 
+
