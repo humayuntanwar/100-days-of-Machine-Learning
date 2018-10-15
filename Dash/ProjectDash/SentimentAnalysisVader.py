@@ -43,14 +43,14 @@ Positive accuracy = 69.4298574643661% via 5332 samples
 Negative accuracy = 57.764441110277566% via 5332 samples
 '''
 
-
+'''
 #using compound values from their docs to make it better
 
 #let's go with the 0.5 and -0.5 as suggested by the documentation:
 pos_count = 0
 pos_correct = 0
 
-threshold = 0.05
+threshold = 0.005
 
 with open("positive.txt","r") as f:
     for line in f.read().split('\n'):
@@ -76,8 +76,6 @@ with open("negative.txt","r") as f:
 print("Positive accuracy = {}% via {} samples".format(pos_correct/pos_count*100.0, pos_count))
 print("Negative accuracy = {}% via {} samples".format(neg_correct/neg_count*100.0, neg_count))
 
-
-'''
 Positive accuracy = 87.22179585571757% via 2606 samples
 Negative accuracy = 50.0% via 1818 samples
 '''
@@ -91,7 +89,7 @@ is lower, or non-existent? For example, to classify something as positive
 why not require the neg bit to be less than 0.1 or something like:
 '''
 
-'''
+
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 import time
@@ -125,7 +123,7 @@ with open("negative.txt","r") as f:
 print("Positive accuracy = {}% via {} samples".format(pos_correct/pos_count*100.0, pos_count))
 print("Negative accuracy = {}% via {} samples".format(neg_correct/neg_count*100.0, neg_count))
 
-
+'''
 Positive accuracy = 80.69370058658507% via 3921 samples
 Negative accuracy = 91.73643975245722% via 2747 samples
 '''
