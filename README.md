@@ -623,3 +623,10 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   ```
   ### Libraires Used: TextBlob, vader 
 
+# DAY 48
+  today we set up own own twitter dev account > pending verification 
+
+  implemented KNN algorithm from scratch using euclidean distance from scipy
+  ```
+  accuracy of 96%
+  ```
