@@ -630,3 +630,10 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   ```
   accuracy of 96%
   ```
+
+# DAY 49
+  Alot of studying on Logistic Regression
+  Started with TensorFLow Object Detection
+  ```
+  details will follow shortly
+  ```
