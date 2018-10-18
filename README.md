@@ -637,3 +637,9 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   ```
   details will follow shortly
   ```
+
+# DAY 50
+  got thw twitter dev account approved
+  using tweepy we gathered twitter tweets into a sql database
+  did sentimental analysis using textblob saved it into database
+  using pandas we read the database to display tweet and sentiment based on any word
