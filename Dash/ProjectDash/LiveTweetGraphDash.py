@@ -8,8 +8,6 @@ import plotly
 import random
 #set axis limits for charts. 
 import plotly.graph_objs as go
-# set a size limit (maxlen)
-from collections import deque
 
 import sqlite3
 import pandas as pd
@@ -49,11 +47,17 @@ def update_graph_scatter(sentiment_term):
         df.sort_values('unix', inplace=True)
         # column names 
         df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-        df.dropna(inplace=True)
+        #create a date col using unix timestamp
+        df['date'] = pd.to_datetime(df['unix'],unit='ms')
+        #set index to date
+        df.set_index('date', inplace=True)
+        #to make it clean and smooth, find mean 
+        df = df.resample('1s').mean()
 
+        df.dropna(inplace=True)
         #create our xs and ys upto 100, last 100 vals , x is unix, y is sentiment smoothed
-        X = df.unix.values[-100:]
-        Y = df.sentiment_smoothed.values[-100:]
+        X = df.index
+        Y = df.sentiment_smoothed
 
 
         data = plotly.graph_objs.Scatter(
@@ -64,7 +68,8 @@ def update_graph_scatter(sentiment_term):
                 )
 
         return {'data': [data],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                    yaxis=dict(range=[min(Y),max(Y)]),)}
+                                                    yaxis=dict(range=[min(Y),max(Y)]),
+                                                    title='Term: {}'.format(sentiment_term))}
     #  catch error using exception write to file
     except Exception as e:
         with open('errors.txt','a') as f:
