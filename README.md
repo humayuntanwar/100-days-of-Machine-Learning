@@ -643,3 +643,13 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   using tweepy we gathered twitter tweets into a sql database
   did sentimental analysis using textblob saved it into database
   using pandas we read the database to display tweet and sentiment based on any word
+
+# Day 51
+  lots of work completed
+  Visualized twitter sentiment using dash graphs
+  Live updates included
+  Provide user with field to enter 'word' to sentiment analyse it
+  watch preview
+  ```
+  https://www.useloom.com/share/aec27b4bb08148e49c4d8541675bf635
+  ```

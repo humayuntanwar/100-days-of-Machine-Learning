@@ -39,9 +39,12 @@ class listener(StreamListener):
             # only tweet text, not fancy emoji
             tweet = unidecode(data['text'])
             time_ms = data['timestamp_ms']
+            #passing tweet to text blob
             analysis = TextBlob(tweet)
+            #getting polarity -1...0..+1
             sentiment = analysis.sentiment.polarity
             print(time_ms, tweet, sentiment)
+            # inserting nix, tweet, sentiment in db
             c.execute("INSERT INTO sentiment (unix, tweet, sentiment) VALUES (?, ?, ?)",
                 (time_ms, tweet, sentiment))
             conn.commit()
@@ -55,7 +58,7 @@ class listener(StreamListener):
 
 
 while True:
-
+#try catch to keep recieivng tweet with sleep to allow blockage continuation
     try:
         auth = OAuthHandler(ckey, csecret)
         auth.set_access_token(atoken, asecret)
