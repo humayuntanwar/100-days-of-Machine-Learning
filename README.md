@@ -644,7 +644,7 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   did sentimental analysis using textblob saved it into database
   using pandas we read the database to display tweet and sentiment based on any word
 
-# Day 51
+# DAY 51
   lots of work completed
   Visualized twitter sentiment using dash graphs
   Live updates included
@@ -653,3 +653,14 @@ Choice 1; 0.49969837120450433,choice 2: 0.5003016287954957
   ```
   https://www.useloom.com/share/aec27b4bb08148e49c4d8541675bf635
   ```
+
+# DAY 52
+  started my first ever Halite Challenge Competition
+  Studied alot of docs
+  set up local enviornment
+  made some changes to my bot 
+    suchas
+      getting location
+      getting halites 
+      getting direction
+      removed randoms
