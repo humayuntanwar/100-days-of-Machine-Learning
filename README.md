@@ -698,3 +698,10 @@ For this project we will be exploring publicly available data from [LendingClub.
   work is being done in Jupyter Notebook in the project notebook
   looked at data
   did some visualizations
+
+
+
+# DAY 58
+  Completed the Random Forest Project
+  performed random forest, and decision tress from sklearn 
+  compared the two
