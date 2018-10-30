@@ -705,3 +705,12 @@ For this project we will be exploring publicly available data from [LendingClub.
   Completed the Random Forest Project
   performed random forest, and decision tress from sklearn 
   compared the two
+
+
+# DAY 59
+  we will be working with the [Titanic Data Set from Kaggle](https://www.kaggle.com/c/titanic).
+
+  We'll be trying to predict a classification- survival or deceased.
+  Let's begin our understanding of implementing Logistic Regression in Python for classification.
+
+  We'll use a "semi-cleaned" version of the titanic data set, if you use the data set hosted directly on Kaggle, you may need to do some additional cleaning not shown in this lecture notebook.
