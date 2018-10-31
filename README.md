@@ -707,6 +707,7 @@ For this project we will be exploring publicly available data from [LendingClub.
   compared the two
 
 
+
 # DAY 59
   we will be working with the [Titanic Data Set from Kaggle](https://www.kaggle.com/c/titanic).
 
@@ -714,3 +715,14 @@ For this project we will be exploring publicly available data from [LendingClub.
   Let's begin our understanding of implementing Logistic Regression in Python for classification.
 
   We'll use a "semi-cleaned" version of the titanic data set, if you use the data set hosted directly on Kaggle, you may need to do some additional cleaning not shown in this lecture notebook.
+
+
+# DAY 60
+  Data Cleaning
+  Converting Categorical Features
+  Building Regression Model
+  Training and Testing
+  Evaluation
+  ```
+  detailed documentation on logistics regression notebooks
+  ```
