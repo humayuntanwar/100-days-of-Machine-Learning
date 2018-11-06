@@ -757,14 +757,13 @@ For this project we will be exploring publicly available data from [LendingClub.
 
 # DAY 62
 ### Completed the Logistic Regression Project
-	
 Output
-	```
-	  precision    recall  f1-score   support
+		```
+			  precision    recall  f1-score   support
 
-          0       0.87      0.96      0.91       162
-          1       0.96      0.86      0.91       168
+			  0       0.87      0.96      0.91       162
+			  1       0.96      0.86      0.91       168
 
-	avg / total       0.91      0.91      0.91       330
+			avg / total       0.91      0.91      0.91       330
 
-	```
+			```
