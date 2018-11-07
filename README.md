@@ -758,3 +758,10 @@ For this project we will be exploring publicly available data from [LendingClub.
 	avg / total       0.91      0.91      0.91       330
 
 	```
+	
+# DAY 64
+ ## Principal Component Analysis
+	Let's discuss PCA! Since this isn't exactly a full machine learning algorithm, but instead an unsupervised learning algorithm,
+
+ ## PCA Review
+	Remember that PCA is just a transformation of your data and attempts to find out what features explain the most variance in your data. 
