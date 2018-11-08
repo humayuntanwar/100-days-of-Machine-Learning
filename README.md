@@ -765,3 +765,10 @@ For this project we will be exploring publicly available data from [LendingClub.
 
  ## PCA Review
 	Remember that PCA is just a transformation of your data and attempts to find out what features explain the most variance in your data. 
+	
+
+# DAY 65
+  ##Recommender Systems with Python
+  we will focus on providing a basic recommendation system by suggesting items that are most similar to a particular item,
+  in this case, movies. Keep in mind, this is not a true robust recommendation system, to describe it more accurately,
+  it just tells you what movies/items are most similar to your movie choice.
