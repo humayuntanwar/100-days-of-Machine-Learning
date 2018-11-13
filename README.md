@@ -727,52 +727,42 @@ For this project we will be exploring publicly available data from [LendingClub.
   detailed documentation on logistics regression notebooks
   ```
 
-# DAY 62
+# DAY 61
   ### Logistic Regression Project
     In this project we will be working with a fake advertising data set, indicating whether or not a particular internet user clicked on an Advertisement. We will try to create a model that will predict whether or not they will click on an ad based off the features of that user.
 
   This data set contains the following features:
     ```
       'Daily Time Spent on Site': consumer time on site in minutes
+     
       'Age': cutomer age in years
+      
       'Area Income': Avg. Income of geographical area of consumer
+     
       'Daily Internet Usage': Avg. minutes a day consumer is on the internet
+      
       'Ad Topic Line': Headline of the advertisement
+      
       'City': City of consumer
+      
       'Male': Whether or not consumer was male
+    
       'Country': Country of consumer
+      
       'Timestamp': Time at which consumer clicked on Ad or closed window
+      
       'Clicked on Ad': 0 or 1 indicated clicking on Ad
     ```
 	
 
-# DAY 63
-	### Completed the Logistic Regression Project
-	Output
-	```
-	  precision    recall  f1-score   support
+# DAY 62
+### Completed the Logistic Regression Project
+Output
+		```
+			  precision    recall  f1-score   support
 
-          0       0.87      0.96      0.91       162
-          1       0.96      0.86      0.91       168
+			  0       0.87      0.96      0.91       162
+			  1       0.96      0.86      0.91       168
 
-	avg / total       0.91      0.91      0.91       330
+			avg / total       0.91      0.91      0.91       330
 
-	```
-	
-# DAY 64
- ## Principal Component Analysis
-	Let's discuss PCA! Since this isn't exactly a full machine learning algorithm, but instead an unsupervised learning algorithm,
-
- ## PCA Review
-	Remember that PCA is just a transformation of your data and attempts to find out what features explain the most variance in your data. 
-	
-
-# DAY 65
-  ##Recommender Systems with Python
-  we will focus on providing a basic recommendation system by suggesting items that are most similar to a particular item,
-  in this case, movies. Keep in mind, this is not a true robust recommendation system, to describe it more accurately,
-  it just tells you what movies/items are most similar to your movie choice.
-  
-  
-# DAY 66
-	## Advance Recommender System
