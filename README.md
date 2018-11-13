@@ -766,3 +766,24 @@ Output
 
 			avg / total       0.91      0.91      0.91       330
 
+	```
+	
+# DAY 64
+ ## Principal Component Analysis
+	Let's discuss PCA! Since this isn't exactly a full machine learning algorithm, but instead an unsupervised learning algorithm,
+
+ ## PCA Review
+	Remember that PCA is just a transformation of your data and attempts to find out what features explain the most variance in your data. 
+	
+
+# DAY 65
+  ##Recommender Systems with Python
+  we will focus on providing a basic recommendation system by suggesting items that are most similar to a particular item,
+  in this case, movies. Keep in mind, this is not a true robust recommendation system, to describe it more accurately,
+  it just tells you what movies/items are most similar to your movie choice.
+  
+  
+# DAY 66
+	## Advance Recommender System
+=======
+			```
