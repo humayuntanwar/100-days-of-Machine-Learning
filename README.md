@@ -785,5 +785,10 @@ Output
   
 # DAY 66
 	## Advance Recommender System
-=======
-			```
+
+# DAY 67
+## MNIST Multi-Layer Perceptron
+we will build out a Multi Layer Perceptron model to try to classify hand written digits using TensorFlow (a very famous example).
+
+Keep in mind that no single lecture (or course!) can cover the vastness that is Deep Learning, I would highly suggest reading MIT's Deep Learning textbook for more information on these topics!
+
