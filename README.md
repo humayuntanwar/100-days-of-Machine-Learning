@@ -792,3 +792,20 @@ we will build out a Multi Layer Perceptron model to try to classify hand written
 
 Keep in mind that no single lecture (or course!) can cover the vastness that is Deep Learning, I would highly suggest reading MIT's Deep Learning textbook for more information on these topics!
 
+
+# DAY 68
+
+## Tensorflow Project Exercise
+
+We'll use the [Bank Authentication Data Set](https://archive.ics.uci.edu/ml/datasets/banknote+authentication) from the UCI repository.
+
+The data consists of 5 columns:
+
+* variance of Wavelet Transformed image (continuous)
+* skewness of Wavelet Transformed image (continuous)
+* curtosis of Wavelet Transformed image (continuous)
+* entropy of image (continuous)
+* class (integer)
+
+Where class indicates whether or not a Bank Note was authentic.
+
