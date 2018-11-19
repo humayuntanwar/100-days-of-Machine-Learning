@@ -812,3 +812,7 @@ Where class indicates whether or not a Bank Note was authentic.
 
 # DAY 69
  Continued with above project
+ 
+ 
+# DAY 70
+Geographical Plotting with Plotly
