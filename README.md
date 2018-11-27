@@ -851,3 +851,13 @@ All reviews start with 0 "cool" votes, and there is no limit to how many "cool" 
 
 The "useful" and "funny" columns are similar to the "cool" column.
 
+
+# DAY 73
+## Polynomial Regression
+https://en.wikipedia.org/wiki/Polynomial_regression
+
+https://www.youtube.com/watch?v=FU_awoUOqwc
+
+
+# DAY 74
+  ## Completed a Basic Halite.io Game bot

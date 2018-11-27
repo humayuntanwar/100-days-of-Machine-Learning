@@ -1,4 +1,3 @@
-MyBot
 Makefile
 *.hlt
 *.log
@@ -9,4 +8,6 @@ __pycache__/
 *.class
 *.ipr
 *.iws
-MyBot.py
+halite.exe
+run_game.bat
+run_game.sh
