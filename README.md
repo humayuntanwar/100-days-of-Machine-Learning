@@ -861,3 +861,6 @@ https://www.youtube.com/watch?v=FU_awoUOqwc
 
 # DAY 74
   ## Completed a Basic Halite.io Game bot
+
+# DAY 75
+  Fixed errors in basic bot

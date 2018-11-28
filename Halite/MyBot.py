@@ -21,7 +21,7 @@ logging.info("Successfully created bot! My Player ID is {}.".format(game.my_id))
 """ <<<Game Loop>>> """
 
 # make ships go back to yard to drop of halite once full
-ship_states = {}
+shates_of_ships = {}
 while True:
     
     game.update_frame()
@@ -31,59 +31,66 @@ while True:
     
     command_queue = []
     #get direction order. a list
-    direction_order = [Direction.North, Direction.South, Direction.East, Direction.West]
+    order_direction = [Direction.North, Direction.South, Direction.East, Direction.West]
     #
+    position_choices = []
 
     for ship in me.get_ships():
-        if ship.id not in ship_states:
-            ship_states[ship.id] = "collecting"
-            
-        #each ship moves only one time each turn , ship positions, get current ship position
-        position_options = ship.position.get_surrounding_cardinals() + [ship.position]
-        #movement mapped to exact coordinate
-        position_dict = {}
-        #acutal movement associated with how much halite
-        halite_dict = {}
-        #lets collect halites for postions
-        #lets populate them
-        for n , direction in enumerate(direction_order):
-            position_dict[direction] = position_options[n]
-        for direction in position_dict:
-            position = position_dict[direction]
-            halite_amount = game_map[position].halite_amount
-            #maps to coordinates
-            if position_dict[direction]not in postion_choices:
-                if direction == Direction.Still: 
-                    halite_dict[direction] = halite_amount*3
-
-                else:
+        if ship.id not in shates_of_ships:
+            shates_of_ships[ship.id] = "collecting"
+        
+        if ship_states[ship.id] == "collecting":
+    
+            #each ship moves only one time each turn , ship positions, get current ship position
+            options_positions = ship.position.get_surrounding_cardinals() + [ship.position]
+            #movement mapped to exact coordinate
+            position_d = {}
+            #acutal movement associated with how much halite
+            halite_d = {}
+            #lets collect halites for postions
+            #lets populate them
+            for n , direction in enumerate(order_direction):
+                position_d[direction] = options_positions[n]
+            for direction in position_d:
+                position = position_d[direction]
+                halite_amount = game_map[position].halite_amount
+                #maps to coordinates
+                if position_d[direction]not in postion_choices:
+                    if direction == Direction.Still:
+                        halite_amount *= 4
                     halite_dict[direction] = halite_amount
 
-            else: 
-                logging.info('attempting to move to same spot\n')
-
-        if ship_states[ship.id] == "depositing":
-            #naivigate ship to shipyard
-            move = game_map.naive_naigate(ship, me.shipyard.position)
-            position_choices.append(position_dict[move])
-            command_queue.append(ship.move(move))
-            # move from shipyard after droppping
-            if move == Direction.Still:
-                ship_states[ship.id] = "collecting"
-
-        #  most eise collection
-        elif ship_states[ship.id] =="collecting":
-            directional_choice = max(halite_dict , key = halite_dict.get)
-            position_choices.append(position_dict[directional_choice])
-            command_queue.append(ship.move(game_map.naive_navigate(ship, position_dict[directional_choice]))
+            directional_choice = max(halite_d,key = halite_d.get)
+            position_choices.append(position_d[directional_choice])
+            command_queue.append(ship.move(game_map.naive_navigate(ship, position_d[directional_choice]))
 
             # change to check alomost to max limit 
             if ship.halite_amount > constants.MAX_HALITE * .95:
-                ship_states[ship.id] ="depositing"
+                shates_of_ships[ship.id] ="depositing"
+
+        elif shates_of_ships[ship.id] == "depositing":
+            #naivigate ship to shipyard
+            move = game_map.naive_naigate(ship, me.shipyard.position)
+            upcoming_position = ship.position + Position(*move)
+            if upcoming_position not in position_choices:
+
+                position_choices.append(position_d[move])
+                command_queue.append(ship.move(move))
+                # move from shipyard after droppping
+                if move == Direction.Still:
+                    shates_of_ships[ship.id] = "collecting"
+            else:
+                position_choices.append(ship.position)
+                command_queue.append(ship.move(game_map.naive_navigate(ship, ship.position+Position(*Direction.Still))))
+
                 
     
-    if game.turn_number <= 200 and me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied:
-        command_queue.append(me.shipyard.spawn())
+    # ship costs 1000, dont make a ship on a ship or they both sink
+    if len(me.get_ships()) < math.ceil(game.turn_number / 25):
+        if me.halite_amount >= 1000 and not game_map[me.shipyard].is_occupied:
+            command_queue.append(me.shipyard.spawn())
 
+    # Send your moves back to the game environment, ending this turn.
+    game.end_turn(command_queue)
     game.end_turn(command_queue)
 
