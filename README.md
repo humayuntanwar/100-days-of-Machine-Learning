@@ -864,3 +864,7 @@ https://www.youtube.com/watch?v=FU_awoUOqwc
 
 # DAY 75
   Fixed errors in basic bot
+  
+  
+# DAY 76
+	Thompsom Samplings on ads visited data
