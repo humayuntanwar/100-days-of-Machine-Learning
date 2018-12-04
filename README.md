@@ -873,3 +873,7 @@ https://www.youtube.com/watch?v=FU_awoUOqwc
 
 # DAY 77
   ![Stochastic Gradient Descent](https://github.com/humayuntanwar/Machine-Learning/blob/master/Artificial_Neural_Network/Stochastic_Gradient_Descent.png)
+
+
+# DAY 78
+  Worked on LDA
