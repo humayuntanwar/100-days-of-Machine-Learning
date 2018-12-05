@@ -877,3 +877,6 @@ https://www.youtube.com/watch?v=FU_awoUOqwc
 
 # DAY 78
   Worked on LDA
+  
+# DAY 79
+  Worked on XGBoost
