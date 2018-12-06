@@ -880,3 +880,7 @@ https://www.youtube.com/watch?v=FU_awoUOqwc
   
 # DAY 79
   Worked on XGBoost
+  
+# DAY 80
+ started creating a bot for OpenAi Breakout
+ set up enviornment
