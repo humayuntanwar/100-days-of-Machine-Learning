@@ -884,3 +884,6 @@ https://www.youtube.com/watch?v=FU_awoUOqwc
 # DAY 80
  started creating a bot for OpenAi Breakout
  set up enviornment
+ 
+# DAY 81
+ created model for our bot
