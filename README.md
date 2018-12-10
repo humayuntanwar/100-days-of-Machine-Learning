@@ -887,3 +887,7 @@ https://www.youtube.com/watch?v=FU_awoUOqwc
  
 # DAY 81
  created model for our bot
+ 
+#DAY 82
+ completed the break out bt , needs some testing and improvement
+ 
